@@ -1,0 +1,485 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Cantonese Tools</TITLE>
+
+<link href="https://fonts.googleapis.com/css?family=Cardo|Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+<!-- Add GA Track code to every webpage -->
+<script src="/ga-track.js"></script>
+
+<style>
+	html, body {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		min-width: 250px;
+		font-family: 'Cardo', serif;
+	}
+	textarea {
+		font-family: 'Cardo', serif;	
+	}
+	h1, h2, h3, h4, .title, .cta, #translator #results-area {
+		font-family: 'Montserrat', sans-serif;
+	}
+	h2 .brackets {
+		color: #999;
+	}
+	input, textarea, keygen, select, button {
+		font-size: 1em;
+	}
+	h2 {
+		font-size: 2em;
+	}
+	p {
+		line-height: 1.5em;
+	}
+	
+	#header {
+		/*Hong-Kong_Hero.jpg*/
+		/*Hong_Kong_at_night.jpg*/
+		/*hk_night.jpg*/
+		background: url('images/about/Hong-Kong_Hero.jpg') center center no-repeat fixed;
+		background-size: cover;
+		color: black;
+		text-align: center;
+
+		/*min-height: 50%;*/
+		font-size: 2em;
+	}
+		#header .container {
+			padding: 10vh 20px;
+			padding-bottom: 15vh;
+			background: rgba(255,255,255,0.6);
+		}
+
+	.section {
+		margin: 0;
+		padding: 30px;
+
+		text-align: center;
+	}
+		.section > .container {
+			max-width: 800px;
+			margin: auto;
+		}
+		.section h2 {
+			margin-top: 0;
+		}
+	
+	#benefits-section {
+		text-align: center;
+	}
+		#benefits-section .benefits-blurb {
+			max-width: 640px; /* 800px * 80% */
+			margin: auto;
+			/*background-color: yellow;*/
+			margin-bottom: 20px;
+		}
+
+	#translator-section {
+		/*onedimsum2.jpg*/
+		/*bruce.gif*/
+		/*yumcha.jpg*/
+		/*Hong-kong,_from_Kow-loon.jpg*/
+		background: url('images/about/Hong-kong,_from_Kow-loon.jpg') center center no-repeat fixed;
+		/* Design-wise, i think if Resources Height isn't at least 100%, then background should be bruce */
+		background-size: cover;
+		color: white;
+		min-height: 200px;
+	}
+		#translator-section #translator-container {
+			color: black;
+			background: white;
+			width: 100%;
+			min-height: 300px;
+			margin: 50px 0;
+			vertical-align: middle;
+		}
+		#translator-wrapper {
+			padding: 30px;
+		}
+
+			/*http://www.cibgraphics.com/blog/pure-css-loader*/
+			#translation-loader {
+				position: absolute;
+				top: 0;
+				right: 0;
+				margin: 1em;
+				padding: 0em;
+				z-index: 100;
+			}
+			.loading {
+				width: 1em;
+				height: 1em;
+				border-radius: 50%;
+				border: solid 5px #7dc7ff;
+				border-top-color: #006ec1;
+			}
+				@keyframes spin { 
+				  100% { 
+					transform: rotate(360deg); 
+				  } 
+				}
+				.loading {
+				  animation: spin 1s infinite linear;
+				}
+
+			/* TRANSLATOR */
+			#translator {
+				margin-top: 20px;
+				position: relative;
+			}
+				#translator > div {
+					/*margin: 20px 0;*/
+					/*padding: 20px;*/
+				}
+					#translator textarea#english-input {
+						background: hsla(0, 0%, 96%, 1);
+						border-radius: 2px;
+						border: 1px solid #ddd;
+						box-shadow: inset 1px 1px 2px #ccc;
+
+						width: 100%;
+						/*margin: 20px 0;*/
+						padding: 20px;
+						box-sizing: border-box;
+						height: 60px;
+						resize: vertical;
+					}
+					#translator #results-area {
+						color: #006ec1;
+						text-shadow: 0 0 1px #7dc7ff;
+						font-size: 2em;
+						padding: 20px;
+						text-align: left;
+					}
+						#results-area .entry {
+							display: inline-block;
+							/*border: 1px solid;*/
+							vertical-align: top;
+							text-align: center;
+							margin: 10px 5px;
+							/*min-width: 1em;*/
+						}
+							#results-area .entry .word {
+								min-height: 1.5em;
+							}
+							#results-area .entry .jyutpings {
+								/*background: #ccc;*/
+								font-size: 0.5em;
+								line-height: 1.5em;
+								color: #8c8c8c;
+							}
+							#results-area .entry .jyutpings span {
+								display: block;
+							}
+							#results-area .entry .jyutpings span.no-jyutping {
+								font-style: italic;
+							}
+							#results-area .entry .jyutpings span:nth-child(1) {
+								/*border-top: 1px solid;*/
+							}
+
+
+	#resources-section h2 {
+		margin-bottom: 1.5em;
+	}
+
+	.entries-collection {
+		/*background-color: wheat;*/
+		/*width: 100%;*/
+	}
+		.entries-in-list {
+			text-align: left;
+		}
+	.entries-collection > .entry {
+		display: inline-block;
+		width: 49%;
+		/*background: orange;*/
+		margin-bottom: 20px;
+		position: relative;
+	}
+	@media (max-width: 600px) {
+		.entries-collection > .entry {
+			width: 100%;
+		}
+	}
+	.entries-collection > .entry .text p.title {
+		font-weight: bold;
+	}
+
+		/* SPECIFICS: COLUMN; */
+		.entries-in-columns {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.entries-in-columns > .entry {
+			width: 22%;
+		}
+		@media (max-width: 600px) {
+			.entries-in-columns > .entry {
+			width: 48%;
+			}
+		}
+		.entries-in-columns .image {
+			padding-bottom: 100%;
+			background: url('images/about/Hong-Kong_Hero.jpg') center center no-repeat;
+			background-size: cover;
+		}
+		.image.yum-cha {
+			background: url('images/about/yumcha.jpg') center center no-repeat;
+			background-size: cover;
+		}
+		.image.film {
+			background: url('images/about/film_clan_of_the_white_lotus.jpg') center center no-repeat;
+			background-size: cover;
+		}
+		.image.business {
+			background: url('images/about/business2.jpg') center center no-repeat;
+			background-size: cover;
+		}
+		.image.art {
+			background: url('images/about/art1.jpg') top center no-repeat;
+			background-size: cover;
+		}
+		
+		/* SPECIFICS: LIST */
+		.entries-in-list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.entries-in-list > .entry {
+			/*background: orange;*/
+		}
+		.entries-in-list > .entry img, .entries-in-list > .entry .text {
+			display: inline-block;
+		}
+		.entries-in-list > .entry img {
+			width: 20%;
+		}
+		.entries-in-list i.fa {
+			position: absolute;
+			z-index: 10;
+			top: 0;
+			left: -10px;
+			width: 70px;
+			text-align: center;
+			font-size: 50px;
+		}
+		.entries-in-list > .entry .text {
+			/*width: 78%;*/
+			padding-left: 70px;
+			/*background: yellow;*/
+			vertical-align: top;
+		}
+			.entries-in-list > .entry .text p.title {
+				/*margin: 0;*/
+			}
+
+		
+	#quote-section {
+		background: pink;
+		background: url('images/about/bruce.gif') center center no-repeat fixed;
+		background-size: cover;
+		color: white;
+	}
+		.quote {
+			padding: 5em 0;
+		}
+		.quote span.saying {
+			font-size: 3em;
+		}
+		.quote span.author {
+			clear: left;
+			display: block;
+			/*font-size: 0.5em;*/
+			padding-top: 1em;
+		}
+	#feedback-section {
+		/*text-align: left;*/
+
+	}
+	#footer-section {
+		/*text-align: left;*/
+		border-top: 1px solid #CCC;
+		color: #999;
+	}
+	.image.circle {
+		border-radius: 50%;
+	}
+	a {
+		text-decoration: none;
+		border-bottom: 1px solid;
+		color: #0091ff;
+		white-space: nowrap;
+	}
+	a:hover {
+		background: #EEE;
+	}
+	#feedback-section .cta {
+		margin-top: 30px;
+	}
+	.cta a {
+		margin: 10px;
+		padding: 10px;
+		background: #0091ff;
+		color: white;
+		font-weight: bold;
+		border: 2px solid;
+		text-transform: uppercase;
+	}
+	.cta a:hover {
+		color: #0091ff;
+		background: initial;
+
+	}
+</style>
+
+<body>
+	<div id="header">
+		<div class="container">
+			<!-- <div>logo</div> -->
+			<h1>Cantonese Tools</h1>
+			<p>for learning, speaking, and typing <span class="chinese">廣東話</span></p>
+		</div>
+	</div>
+
+	<div class="section" id="benefits-section">
+		<div class="container">
+			<h2>Benefits of Cantonese</h2>
+			<p class="benefits-blurb">Cantonese-Chinese is different from Mandarin-Chinese, in both pronunciation and grammar. Cantonese is a common Chinese variant in Hong Kong, Southeastern China, Australia, Canada, and the United States.</p>
+			<div class="entries-collection entries-in-columns">
+				<div class="entry">
+					<div class="image circle film"></div>
+					<div class="text">
+						<p class="title">Film Buffs</p>
+						<p class="description">Many exported classical Chinese films and actors originate from Hong Kong’s film industry. Watch movies like Enter the Dragon, Ip Man, or Mr Vampire with the original vernacular.</p>
+					</div>
+				</div>
+				<div class="entry">
+					<div class="image circle business"></div>
+					<div class="text">
+						<p class="title">Business & Travel</p>
+						<p class="description">Conducting business in Hong Kong, Macau, or Guangzhou? Sure you can get by with Mandarin-Chinese (or English), but knowing Cantonese-Chinese will get you much further.</p>
+					</div>
+				</div>
+				<div class="entry">
+					<div class="image circle art"></div>
+					<div class="text">
+						<p class="title">The Arts</p>
+						<p class="description">Chinese Art is a big part of its history. To understand historic Chinese poetry and paintings, you’ll need the traditional Chinese characters inherent in Cantonese-Chinese.</p>
+					</div>
+				</div>
+				<div class="entry">
+					<div class="image circle yum-cha"></div>
+					<div class="text">
+						<p class="title">Dim Sum</p>
+						<p class="description">Food – one of the best reasons to do anything. Be confident walking into your local Dim Sum (Yum Cha) or Chinatown – knowing exactly what dish is what and how to order it.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section" id="translator-section">
+	</div>
+
+	<div class="section" id="resources-section">
+		<div class="container">
+			<h2>Resources</h2>
+			<div class="entries-collection entries-in-list">
+				<div class="entry">
+					<div class="text">
+						<i class="fa fa-graduation-cap"></i>
+						<p class="title">Learning</p>
+						<p class="description"><a target="_blank" href="http://cantonese.ca/">Cantonese.ca</a> offers a helpful introduction to Cantonese.</p> 
+						<p><a target="_blank" href="https://www.cantoneseclass101.com/">CantoneseClass101.com</a> offers paid classes with free sample content in their apps and youtube channel.</p>
+						<p><em>(Not yet officially supported in Duolingo.)</em></p>
+					</div>
+				</div>
+				
+				
+				<div class="entry">
+					<div class="text">
+						<!-- <i class="fa fa-american-sign-language-interpreting"></i> -->
+						<i class="fa fa-globe"></i>
+						<p class="title">Translation</p>
+						<p class="description">Microsoft's <a target="_blank" href="https://www.bing.com/translator">Bing Translator</a> can translate into written and spoken Cantonese.</p><p><a target="_blank" href="https://www.bing.com/translator">Online</a> | <a target="_blank" href="https://itunes.apple.com/us/app/microsoft-translator/id1018949559">iOS</a> | <a target="_blank" href="https://play.google.com/store/apps/details?id=com.microsoft.translator">Android</a></p>
+						<p><em>(Not yet supported in Google Translate.)</em></p>
+					</div>
+				</div>
+
+				<div class="entry">
+					<div class="text">
+						<i class="fa fa-pencil-square-o"></i>
+						<p class="title">Hand Writing</p>
+						<p class="description">Though Chinese variations can differ in meaning, grammar, and pronunciation - the characters themselves largely remain the same. Therefore, all major Operating Systems supports handwriting Cantonese-Chinese.</p>
+						<p><a target="_blank" href="https://support.apple.com/kb/PH22639?viewlocale=en_US&locale=zh_CN">macOS</a> | <a target="_blank" href="http://www.pinyinjoe.com/windows-10/windows-10-chinese-handwriting-speech-display-language-packs.htm">Windows</a> | <a target="_blank" href="https://www.youtube.com/watch?v=uOBgOqGjKOI">iOS</a> | <a target="_blank" href="https://play.google.com/store/apps/details?id=com.google.android.apps.inputmethod.cantonese&hl=en">Android</a></p>
+					</div>
+				</div>
+
+				<div class="entry">
+					<div class="text">
+						<i class="fa fa-keyboard-o"></i>
+						<p class="title">Typing</p>
+						<p class="description">Rather than handwriting characters, Cantonese can be typed out by how it sounds. This is usually done through third-party services.</p> 
+						<p>iOS (<a target="_blank" href="https://itunes.apple.com/ca/app/cantokey-yue-pin-shu-ru-fa/id1163602967?mt=8">1</a>, <a target="_blank" href="https://itunes.apple.com/us/app/zhong-wen-shu-ru-fa-cang-xie/id959600817?mt=8">2</a>, <a target="_blank" href="https://itunes.apple.com/us/app/%E5%BB%A3%E6%9D%B1%E8%A9%B1%E8%BC%B8%E5%85%A5%E6%B3%95/id918088646?mt=8&ign-mpt=uo%3D4">3</a>, <a target="_blank" href="https://itunes.apple.com/us/app/hkkeyboard/id1207677353?mt=8&ign-mpt=uo%3D4">4</a>) | 
+						Android (<a target="_blank" href="https://play.google.com/store/apps/details?id=com.google.android.apps.inputmethod.cantonese&hl=en">1</a>, <a target="_blank" href="https://play.google.com/store/apps/details?id=com.milesleung.android.softKeyboard.cantoneseKeyboard&hl=en">2</a>) | <a target="_blank" href="http://www.google.com.hk/intl/zh-TW/landing/suggest/">Desktop via Google Input Tools</a> | <a target="_blank" href="https://carriear.wordpress.com/2015/05/11/how-to-type-chinese-with-jyutping-%E7%B2%B5%E6%8B%BC-on-mac/">Mac</a> | <a target="_blank" href="http://cpime.hk/">Windows</a></p>
+						<p><em>(More information coming soon.)</em></p>
+					</div>
+				</div>
+				<div class="entry">
+					<div class="text">
+						<i class="fa fa-microphone"></i>
+						<p class="title">Dictation</p>
+						<p class="description">Did you know you can speak to your phone or computer in Cantonese and have it write the Chinese characters for you? Very helpful to see if you’re pronouncing correctly.</p>
+						<p><a target="_blank" href="https://support.apple.com/en-us/HT202584">Mac</a> | iPhone & iPad | <a target="_blank" href="https://play.google.com/store/apps/details?id=com.google.android.apps.inputmethod.cantonese&hl=en">Android</a> | <a target="_blank" href="http://www.pinyinjoe.com/windows-10/windows-10-chinese-handwriting-speech-display-language-packs.htm#speech">Windows</a></p>
+						<p><em>(We are working to improve Bilingual Dictation on iPhones.)</em></p>
+						<p><em>(More information coming soon.)</em></p>
+					</div>
+				</div>
+				<div class="entry">
+					<div class="text">
+						<i class="fa fa-volume-up"></i>
+						<p class="title">Listening</p>
+						<p class="description">Our computers and phones can actually read any Cantonese-Chinese text out loud. Great for learning how to pronounce words.</p> 
+						<p><a target="_blank" href="https://support.apple.com/kb/ph14230?locale=en_US">OSX 10.9+</a> | <a target="_blank" href="https://support.apple.com/kb/PH25639?locale=en_US">macOS 10.12+</a> | <a target="_blank" href="https://9to5mac.com/2014/10/04/ios-8-how-to-have-your-ios-device-read-text-for-you/">iOS</a> | <a target="_blank" href="https://play.google.com/store/apps/details?id=com.google.android.tts">Android</a> | <a target="_blank" href="https://support.office.com/en-us/article/Using-the-Speak-feature-with-Multilingual-TTS-e522a4f2-37cb-492b-be6a-8997d23dfe70">Windows</a></p>
+						<p><em>(More information coming soon.)</em></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section" id="quote-section">
+		<div class="container">
+			<div class="quote">
+				<span class="saying">"The possession of anything begins in the mind."</span>
+				<span class="author">Bruce Lee</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="section" id="feedback-section">
+		<div class="container">
+			<h2>Suggestions</h2>
+			<p>Would love to hear your suggestions, questions and comments.</p>
+			<p><a href="mailto:cantonese.tools@gmail.com">cantonese.tools@gmail.com</a></p>
+			<p>Drop us a line!</p>
+			<p class="cta"><a href="mailto:cantonese.tools@gmail.com">Contact</a></p>
+		</div>
+	</div>
+
+	<div class="section" id="footer-section">
+		<div class="container">
+			<!-- <span class="logo">logo</span> -->
+			<span>© Cantonese Tools, 2017</span>
+			<span> – <em>Updated March 2017</em></span>
+		</div>
+	</div>
+
+</body>
+
+<script src="jquery-2.1.3.min.js"></script>
