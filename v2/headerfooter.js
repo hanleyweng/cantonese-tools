@@ -1,15 +1,15 @@
 $(document).ready(function() {
 	var header = ''+
 	'<div id="site-header">'+
-		'<p>'+
-			'<a href="index.html">Home</a>'+
-			'<a href="ios.html">iPhone</a>'+
-			'<a href="mac.html">Mac</a>'+
-			'Android'+
-			'Windows'+
-		'</p>'+
-		'<hr>'+
-	'</div>';
+		'<ul>'+
+			'<li><a class="index" href="index.html">Home</a></li>'+
+			'<li><a class="ios" href="ios.html">iPhone</a></li>'+
+			'<li><a class="mac" href="mac.html">Mac</a></li>'+
+			'<li>Android</li>'+
+			'<li>Windows</li>'+
+		'</ul>'+
+	'</div>'+
+	'<hr>';
 	$('body').prepend(header);
 
 	var footer = ''+

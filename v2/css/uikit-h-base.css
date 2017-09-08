@@ -11,3 +11,7 @@ table {
 table, table tr, table td, table th {
 	border: 1px solid;
 }
+a:hover {
+	border-bottom: 4px solid;
+	text-decoration: none;
+}

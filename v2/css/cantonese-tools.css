@@ -1,14 +1,73 @@
-html {
+p {
+	1.7em;
+}
+li {
+	margin: 1em 0;
+}
+#site-header, #site-footer, div.page {
+	max-width: 850px;
+	margin: auto;
+	padding: 0 10%;
+}
+#site-header {
+	padding-top: 1em;
+}
+#site-header ul {
+	padding: 0;
+}
+#site-header ul li {
+	display: inline;
+	padding-right: 3em;
+}
+#site-footer {
+	text-align: center;
+}
+div.page {
+	padding: 5% 10%;
+}
+div.page.home .capabilities {
+	/*background-color: yellow;*/
+	padding-top: 0.5em;
+}
+div.page.home .capabilities > div {
+	position: relative;
+	display: inline-table;
+	max-width: 44%;
+	padding-right: 5%;
+	padding-bottom: 2em;
+}
+div.page.home .capabilities span.fa {
+	font-size: 3em;
+	/*text-align: center;*/
+	/*width: 100%;*/
+}
+div.page.home .capabilities p.title {
+	/*text-align: center;*/
+	font-weight: bold;
+	/*text-transform: uppercase;*/
+	float: left;
+	position: absolute;
+	top: -0.5em;
+	left: 5em;
+}
+div.page.home .capabilities p.description {
+	color: #666;
 }
 div.page.instructions img {
 	max-width: 300px;
 	display: block;
 	border: 1px solid #ccc;
 	border-radius: 2px;
+	margin: 1em 0;
 }
 div.page.instructions img.no-border {
 	border: none;
 }
+div.page .subnotes {
+	font-style: italic;
+	color: #666;
+}
+
 
 
 /* TEMP DEBUG / PLACEHOLDERS */
