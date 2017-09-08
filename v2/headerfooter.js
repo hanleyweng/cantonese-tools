@@ -8,11 +8,13 @@ $(document).ready(function() {
 			'Android'+
 			'Windows'+
 			'<a href="about.html">About</a>'+
-		'</p>'
+		'</p>'+
+		'<hr>'+
 	'</div>';
 	$('body').prepend(header);
 
 	var footer = ''+
+	'<hr>'+
 	'<div id="site-footer">'+
 		'<p>'+
 			'<a href="index.html">Home</a> | '+
@@ -22,8 +24,7 @@ $(document).ready(function() {
 			'Windows<br>'+
 			'<a href="about.html">About</a> | '+
 			'<a href="mailto:cantonese.tools@gmail.com">Contact</a>'+
-		'</p>'
-		
+		'</p>'+
 		'<p><em>© Cantonese Tools, 2017 – Updated October 2017</em></p>'+
 	'</div>'
 
