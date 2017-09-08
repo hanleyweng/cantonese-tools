@@ -7,7 +7,6 @@ $(document).ready(function() {
 			'<a href="mac.html">Mac</a>'+
 			'Android'+
 			'Windows'+
-			'<a href="about.html">About</a>'+
 		'</p>'+
 		'<hr>'+
 	'</div>';

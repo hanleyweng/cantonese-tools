@@ -1,2 +1,18 @@
 html {
 }
+div.page.instructions img {
+	max-width: 300px;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+div.page.instructions img.no-border {
+	border: none;
+}
+
+
+/* TEMP DEBUG / PLACEHOLDERS */
+div.page.home img {
+	/*temporary - used to show where to place images*/
+	border: 1px solid;
+}
