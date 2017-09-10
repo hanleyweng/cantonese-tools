@@ -4,6 +4,20 @@ p {
 li {
 	margin: 1em 0;
 }
+a.cta {
+	border: 4px solid #1e87f0;
+	background-color: #1e87f0;
+	color: white;
+	padding: 8px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.15em;
+}
+a.cta:hover {
+	border: 6px solid #1e87f0;
+	background-color: white;
+	color: #1e87f0;
+}
 #site-header, #site-footer, div.page {
 	max-width: 850px;
 	margin: auto;
@@ -15,6 +29,9 @@ li {
 #site-header ul {
 	padding: 0;
 }
+.header-section hr {
+	margin-bottom: 0;
+}
 #site-header ul li {
 	display: inline;
 	padding-right: 3em;
@@ -25,34 +42,148 @@ li {
 div.page {
 	padding: 5% 10%;
 }
+/* PAGE: ABOUT - OVERRIDES */
+div.page.about {
+	padding: initial;
+	max-width: initial;
+}
+
+/* PAGE: HOME */
+div.page.home .medium-links {
+	display: flex;
+	justify-content: space-between;
+}
+	div.page.home .medium-links a:hover {
+		border: none;
+	}
+	div.page.home .medium-links a span {
+		border-bottom: 4px solid transparent;
+	}
+	div.page.home .medium-links a:hover span {
+		border-bottom: 4px solid;
+	}
+	div.page.home .medium-links > div {
+		text-align: center;
+		/*border: 1px solid;*/
+		max-width: 20%;
+	}
+	div.page.home .medium-links > div img {
+		max-height: 80px;
+	}
+	div.page.home .medium-links > div span {
+		padding: 5px;
+		display: block;
+	}
+
+div.page.home .banner {
+	/*padding-bottom: 100%;*/
+	background-color: cyan;
+	height: 200px;
+	background: url('../images/about/Hong-Kong_Hero.jpg') center center no-repeat fixed;
+	/*background: url('../images/index/guangdong-embroidery-red.jpg') center center no-repeat fixed;*/
+	/*background: url('../images/index/guangdong-embroidery-bird.jpg') center center no-repeat fixed;*/
+	background-size: cover;
+	border-radius: 20px;
+
+}
+
 div.page.home .capabilities {
 	/*background-color: yellow;*/
 	padding-top: 0.5em;
 }
-div.page.home .capabilities > div {
-	position: relative;
-	display: inline-table;
-	max-width: 44%;
-	padding-right: 5%;
-	padding-bottom: 2em;
+	div.page.home .capabilities > div {
+		position: relative;
+		display: inline-table;
+		max-width: 44%;
+		padding-right: 5%;
+		padding-bottom: 2em;
+	}
+	div.page.home .capabilities span.fa {
+		font-size: 3em;
+		/*text-align: center;*/
+		/*width: 100%;*/
+	}
+	div.page.home .capabilities p.title {
+		/*text-align: center;*/
+		font-weight: bold;
+		/*text-transform: uppercase;*/
+		float: left;
+		position: absolute;
+		top: -0.5em;
+		left: 5em;
+	}
+	div.page.home .capabilities p.description {
+		color: #666;
+	}
+	
+
+/* PAGE: INSTRUCTIONS */
+div.page.instructions .section-links {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
 }
-div.page.home .capabilities span.fa {
-	font-size: 3em;
-	/*text-align: center;*/
-	/*width: 100%;*/
+div.page.instructions .section-links > .section-link {
+	display: table-cell;
+	text-align: center;
 }
-div.page.home .capabilities p.title {
-	/*text-align: center;*/
-	font-weight: bold;
-	/*text-transform: uppercase;*/
-	float: left;
-	position: absolute;
-	top: -0.5em;
-	left: 5em;
+	.page.instructions .section-link {
+		padding: 1.5vw;
+	}
+	.page.instructions .section-link span {
+		display: block;
+	}
+	.page.instructions .section-link span.fa {
+		font-size: 7vw;
+	}
+	.page.instructions .section-link span.description {
+		color: #666;
+	}
+	.page.instructions .section-link span.status {
+		font-size: 2vw;
+		border: 2px solid;
+		border-radius: 1.5em;
+		width: 1.5em;
+		height: 1.5em;
+		margin: auto;
+		margin-top: 0.5em;
+		/*font-weight: bold;*/
+		color: limegreen;
+	}
+	.page.instructions .section-link span.status.weak {
+		color: orange;
+	}
+table.support {
+	text-align: center;
 }
-div.page.home .capabilities p.description {
-	color: #666;
-}
+	table.support th {
+		padding: 20px 10px;
+		vertical-align: top;
+	}
+	table.support th img {
+		max-width: 50%;
+	}
+	table.support th a {
+		border: none;
+		
+	}
+	table.support th span {
+		display: block;
+		border-bottom: 4px solid transparent;
+	}
+	table.support th a:hover span {
+		border-bottom: 4px solid;
+	}
+	table.support td.high {
+		background-color: #d3ffce;
+	}
+	table.support td.mid {
+		background-color: #ffface;
+	}
+	table.support td.low {
+		background-color: #ffced3;
+	}
+
 div.page.instructions img {
 	max-width: 300px;
 	display: block;
@@ -68,10 +199,8 @@ div.page .subnotes {
 	color: #666;
 }
 
-
-
-/* TEMP DEBUG / PLACEHOLDERS */
-div.page.home img {
-	/*temporary - used to show where to place images*/
-	border: 1px solid;
+/* TEMP PLACEHOLDERS */
+.wip, img.wip {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 }

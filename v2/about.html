@@ -1,17 +1,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<TITLE>Cantonese Tools</TITLE>
+<TITLE>About Cantonese Tools</TITLE>
 
 <link href="https://fonts.googleapis.com/css?family=Cardo|Montserrat" rel="stylesheet">
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
-<script src="/js/ga-track.js"></script> <!-- Add GA Track code to every webpage - when live -->
-<script src="js/jquery-2.1.3.min.js"></script>
-
-<!-- Styles are too different too the custom styling here -->
-<!-- <link rel="stylesheet" href="css/uikit.css">
+<link rel="stylesheet" href="css/uikit.css">
 <link rel="stylesheet" href="css/uikit-h-base.css">
-<link rel="stylesheet" href="css/cantonese-tools.css"> -->
+<link rel="stylesheet" href="css/cantonese-tools.css">
 
+<script src="/js/ga-track.js"></script> <!-- Add GA Track code to every webpage -->
+<script src="js/jquery-2.1.3.min.js"></script>
 <script src="headerfooter.js"></script>
 
 
@@ -21,13 +19,10 @@
 		height: 100%;
 		margin: 0;
 		min-width: 250px;
-		font-family: 'Cardo', serif;
-	}
-	textarea {
-		font-family: 'Cardo', serif;	
+		/*font-family: 'Cardo', serif;*/
 	}
 	h1, h2, h3, h4, .title, .cta, #translator #results-area {
-		font-family: 'Montserrat', sans-serif;
+		/*font-family: 'Montserrat', sans-serif;*/
 	}
 	h2 .brackets {
 		color: #999;
@@ -55,9 +50,15 @@
 		font-size: 2em;
 	}
 		#header .container {
-			padding: 10vh 20px;
+			padding: 10vh 40px;
 			padding-bottom: 15vh;
 			background: rgba(255,255,255,0.6);
+		}
+		#header .container p {
+			margin: auto;
+			max-width: 850px;
+			/*font-style: oblique;*/
+			font-size: 0.6em;
 		}
 
 	.section {
@@ -95,99 +96,6 @@
 		color: white;
 		min-height: 200px;
 	}
-		#translator-section #translator-container {
-			color: black;
-			background: white;
-			width: 100%;
-			min-height: 300px;
-			margin: 50px 0;
-			vertical-align: middle;
-		}
-		#translator-wrapper {
-			padding: 30px;
-		}
-
-			/*http://www.cibgraphics.com/blog/pure-css-loader*/
-			#translation-loader {
-				position: absolute;
-				top: 0;
-				right: 0;
-				margin: 1em;
-				padding: 0em;
-				z-index: 100;
-			}
-			.loading {
-				width: 1em;
-				height: 1em;
-				border-radius: 50%;
-				border: solid 5px #7dc7ff;
-				border-top-color: #006ec1;
-			}
-				@keyframes spin { 
-				  100% { 
-					transform: rotate(360deg); 
-				  } 
-				}
-				.loading {
-				  animation: spin 1s infinite linear;
-				}
-
-			/* TRANSLATOR */
-			#translator {
-				margin-top: 20px;
-				position: relative;
-			}
-				#translator > div {
-					/*margin: 20px 0;*/
-					/*padding: 20px;*/
-				}
-					#translator textarea#english-input {
-						background: hsla(0, 0%, 96%, 1);
-						border-radius: 2px;
-						border: 1px solid #ddd;
-						box-shadow: inset 1px 1px 2px #ccc;
-
-						width: 100%;
-						/*margin: 20px 0;*/
-						padding: 20px;
-						box-sizing: border-box;
-						height: 60px;
-						resize: vertical;
-					}
-					#translator #results-area {
-						color: #006ec1;
-						text-shadow: 0 0 1px #7dc7ff;
-						font-size: 2em;
-						padding: 20px;
-						text-align: left;
-					}
-						#results-area .entry {
-							display: inline-block;
-							/*border: 1px solid;*/
-							vertical-align: top;
-							text-align: center;
-							margin: 10px 5px;
-							/*min-width: 1em;*/
-						}
-							#results-area .entry .word {
-								min-height: 1.5em;
-							}
-							#results-area .entry .jyutpings {
-								/*background: #ccc;*/
-								font-size: 0.5em;
-								line-height: 1.5em;
-								color: #8c8c8c;
-							}
-							#results-area .entry .jyutpings span {
-								display: block;
-							}
-							#results-area .entry .jyutpings span.no-jyutping {
-								font-style: italic;
-							}
-							#results-area .entry .jyutpings span:nth-child(1) {
-								/*border-top: 1px solid;*/
-							}
-
 
 	#resources-section h2 {
 		margin-bottom: 1.5em;
@@ -298,6 +206,7 @@
 		}
 		.quote span.saying {
 			font-size: 3em;
+			font-style: oblique;
 		}
 		.quote span.author {
 			clear: left;
@@ -307,7 +216,6 @@
 		}
 	#feedback-section {
 		/*text-align: left;*/
-
 	}
 	#footer-section {
 		/*text-align: left;*/
@@ -317,15 +225,7 @@
 	.image.circle {
 		border-radius: 50%;
 	}
-	a {
-		text-decoration: none;
-		border-bottom: 1px solid;
-		color: #0091ff;
-		white-space: nowrap;
-	}
-	a:hover {
-		background: #EEE;
-	}
+
 	#feedback-section .cta {
 		margin-top: 30px;
 	}
@@ -358,8 +258,8 @@
 
 	<div class="section" id="benefits-section">
 		<div class="container">
-			<h2>Benefits of Cantonese</h2>
-			<p class="benefits-blurb">Cantonese-Chinese is different from Mandarin-Chinese, in both pronunciation and grammar. Cantonese is a common Chinese variant in Hong Kong, Southeastern China, Australia, Canada, and the United States.</p>
+			<h2>Why Cantonese</h2>
+			<p class="benefits-blurb">Cantonese-Chinese is different from Mandarin-Chinese in both pronunciation and grammar. Cantonese is a common Chinese variant in Hong Kong, Southeastern China, Australia, Canada, and the United States.</p>
 			<div class="entries-collection entries-in-columns">
 				<div class="entry">
 					<div class="image circle film"></div>
@@ -372,21 +272,21 @@
 					<div class="image circle business"></div>
 					<div class="text">
 						<p class="title">Business & Travel</p>
-						<p class="description">Conducting business in Hong Kong, Macau, or Guangzhou? Sure you can get by with Mandarin-Chinese (or English), but knowing Cantonese-Chinese will get you much further.</p>
+						<p class="description">Conducting business in Hong Kong, Macau, or Guangzhou? Having an understanding of Cantonese will get you far with local companies.</p>
 					</div>
 				</div>
 				<div class="entry">
 					<div class="image circle art"></div>
 					<div class="text">
 						<p class="title">The Arts</p>
-						<p class="description">Chinese Art is a big part of its history. To understand historic Chinese poetry and paintings, you’ll need the traditional Chinese characters inherent in Cantonese-Chinese.</p>
+						<p class="description">Art is a large part of China's history. To study the greats ancient Chinese poetry and paintings, you’ll need the traditional Chinese characters inherent in Cantonese.</p>
 					</div>
 				</div>
 				<div class="entry">
 					<div class="image circle yum-cha"></div>
 					<div class="text">
 						<p class="title">Dim Sum</p>
-						<p class="description">Food – one of the best reasons to do anything. Be confident walking into your local Dim Sum (Yum Cha) or Chinatown – knowing exactly what dish is what and how to order it.</p>
+						<p class="description">Food – one of the best reasons to do anything. Be confident walking into your local Dim Sum (Yum Cha) or Chinatown – knowing exactly what dish is what.</p>
 					</div>
 				</div>
 			</div>
@@ -442,14 +342,6 @@
 			<p><a href="mailto:cantonese.tools@gmail.com">cantonese.tools@gmail.com</a></p>
 			<p>Drop us a line!</p>
 			<p class="cta"><a href="mailto:cantonese.tools@gmail.com">Contact</a></p>
-		</div>
-	</div>
-
-	<div class="section" id="footer-section">
-		<div class="container">
-			<!-- <span class="logo">logo</span> -->
-			<span>© Cantonese Tools, 2017</span>
-			<span> – <em>Updated March 2017</em></span>
 		</div>
 	</div>
 
