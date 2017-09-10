@@ -26,6 +26,11 @@ a.cta:hover {
 #site-header {
 	padding-top: 1em;
 }
+body.home #site-header a.index,
+body.ios #site-header a.ios,
+body.mac #site-header a.mac {
+	border-bottom: 1px solid;
+}
 #site-header ul {
 	padding: 0;
 }
