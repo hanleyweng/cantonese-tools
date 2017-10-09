@@ -90,13 +90,13 @@ div.page.home .banner {
 	background-size: cover;
 	border-radius: 20px;
 }
-@media only screen and (max-width: 480px) {
-	div.page.home .banner {
-		background: url('../images/about/Hong-Kong_Hero.jpg');
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
+	@media only screen and (max-width: 480px) {
+		div.page.home .banner {
+			background: url('../images/about/Hong-Kong_Hero.jpg');
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
 	}
-}
 
 div.page.home .capabilities {
 	/*background-color: yellow;*/
@@ -126,7 +126,49 @@ div.page.home .capabilities {
 	div.page.home .capabilities p.description {
 		color: #666;
 	}
-	
+
+table.support {
+	text-align: center;
+}
+	table.support th {
+		padding: 20px 10px;
+		vertical-align: top;
+	}
+	table.support th img {
+		max-width: 50%;
+	}
+	table.support th a {
+		border: none;
+		
+	}
+	table.support th span {
+		display: block;
+		border-bottom: 4px solid transparent;
+	}
+	table.support th a:hover span {
+		border-bottom: 4px solid;
+	}
+	table.support td.high {
+		background-color: #d3ffce;
+	}
+	table.support td.mid {
+		background-color: #ffface;
+	}
+	table.support td.low {
+		background-color: #ffced3;
+	}
+
+	@media only screen and (max-width: 480px) {
+		table.support {
+			font-size: 0.7em;
+		}
+		table a.cta {
+			border: 1px solid;
+			padding: 6px;
+			letter-spacing: initial;
+		}
+	}
+
 
 /* PAGE: INSTRUCTIONS */
 div.page.instructions .section-links {
@@ -163,36 +205,6 @@ div.page.instructions .section-links > .section-link {
 	}
 	.page.instructions .section-link span.status.weak {
 		color: orange;
-	}
-table.support {
-	text-align: center;
-}
-	table.support th {
-		padding: 20px 10px;
-		vertical-align: top;
-	}
-	table.support th img {
-		max-width: 50%;
-	}
-	table.support th a {
-		border: none;
-		
-	}
-	table.support th span {
-		display: block;
-		border-bottom: 4px solid transparent;
-	}
-	table.support th a:hover span {
-		border-bottom: 4px solid;
-	}
-	table.support td.high {
-		background-color: #d3ffce;
-	}
-	table.support td.mid {
-		background-color: #ffface;
-	}
-	table.support td.low {
-		background-color: #ffced3;
 	}
 
 div.page.instructions img {
