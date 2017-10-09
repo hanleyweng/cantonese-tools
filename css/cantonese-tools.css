@@ -89,7 +89,13 @@ div.page.home .banner {
 	/*background: url('../images/index/guangdong-embroidery-bird.jpg') center center no-repeat fixed;*/
 	background-size: cover;
 	border-radius: 20px;
-
+}
+@media only screen and (max-width: 480px) {
+	div.page.home .banner {
+		background: url('../images/about/Hong-Kong_Hero.jpg');
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
 }
 
 div.page.home .capabilities {
