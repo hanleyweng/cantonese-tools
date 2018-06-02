@@ -12,6 +12,7 @@ a.cta {
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 0.15em;
+	display: inline-block;
 }
 a.cta:hover {
 	border: 6px solid #1e87f0;
@@ -28,7 +29,8 @@ a.cta:hover {
 }
 body.home #site-header a.index,
 body.ios #site-header a.ios,
-body.mac #site-header a.mac {
+body.mac #site-header a.mac,
+body.android #site-header a.android {
 	border-bottom: 1px solid;
 }
 #site-header ul {
@@ -206,6 +208,9 @@ div.page.instructions .section-links > .section-link {
 	.page.instructions .section-link span.status.weak {
 		color: orange;
 	}
+	.page.instructions .section-link span.status.none {
+		color: red;
+	}
 
 div.page.instructions img {
 	max-width: 300px;
@@ -217,6 +222,21 @@ div.page.instructions img {
 div.page.instructions img.no-border {
 	border: none;
 }
+div.page.instructions img.full-width {
+	max-width: 100%;
+	width: 100%;
+}
+div.page.instructions table,
+div.page.instructions table tr,
+div.page.instructions table td {
+	border: none;
+}
+div.page.instructions table img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
 div.page .subnotes {
 	font-style: italic;
 	color: #666;

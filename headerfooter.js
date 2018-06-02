@@ -6,7 +6,7 @@ $(document).ready(function() {
 				'<li><a class="index" href="index.html">Home</a></li>'+
 				'<li><a class="ios" href="ios.html">iPhone</a></li>'+
 				'<li><a class="mac" href="mac.html">Mac</a></li>'+
-				'<li>Android</li>'+
+				'<li><a class="android" href="android.html">Android</a></li>'+
 				'<li>Windows</li>'+
 				// '<li><a class="mac" href="about.html">About</a></li>'+
 			'</ul>'+
@@ -19,11 +19,13 @@ $(document).ready(function() {
 	'<hr>'+
 	'<div id="site-footer">'+
 		'<p>'+
-			'<a href="index.html">Home</a> | '+
-			'<a href="ios.html">iPhone & iPad</a> | '+
-			'<a href="mac.html">Mac</a> | '+
-			'Android | '+
-			'Windows<br>'+
+			'<a href="index.html"><span class="fa"></span> Home</a> | '+
+			'<a href="ios.html"><span class="fa"></span> iPhone & iPad</a> | '+
+			'<a href="mac.html"><span class="fa"></span> Mac</a> | '+
+			'<a href="android.html"><span class="fa"></span> Android</a> | '+
+			'<span class="fa"></span> Windows'+
+		'</p>'+
+		'<p>'+
 			'<a href="about.html">About</a> | '+
 			'<a href="mailto:cantonese.tools@gmail.com">Contact</a>'+
 		'</p>'+
