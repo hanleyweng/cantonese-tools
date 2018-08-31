@@ -29,7 +29,7 @@ $(document).ready(function() {
 			'<a href="about.html">About</a> | '+
 			'<a href="mailto:cantonese.tools@gmail.com">Contact</a>'+
 		'</p>'+
-		'<p><em>© Cantonese Tools, 2017 – Updated October 2017</em></p>'+
+		'<p><em>© Cantonese Tools, 2018 – Updated August 2018</em></p>'+
 	'</div>'
 
 	$('body').append(footer);
