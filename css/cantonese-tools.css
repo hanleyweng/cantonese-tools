@@ -159,6 +159,10 @@ table.support {
 	table.support td.low {
 		background-color: #ffced3;
 	}
+	table.support tr:last-child td {
+		height: 5em;
+	}
+
 
 	@media only screen and (max-width: 480px) {
 		table.support {
