@@ -31,7 +31,13 @@ body.home #site-header a.index,
 body.ios #site-header a.ios,
 body.mac #site-header a.mac,
 body.android #site-header a.android {
-	border-bottom: 1px solid;
+	border-bottom: 2px solid;
+}
+body.home #site-footer a.index,
+body.ios #site-footer a.ios,
+body.mac #site-footer a.mac,
+body.android #site-footer a.android {
+	border-bottom: 2px solid;
 }
 #site-header ul {
 	padding: 0;
@@ -42,6 +48,11 @@ body.android #site-header a.android {
 #site-header ul li {
 	display: inline;
 	padding-right: 3em;
+}
+#site-header span.unavailable,
+#site-footer span.unavailable
+ {
+	text-decoration: line-through;
 }
 #site-footer {
 	text-align: center;

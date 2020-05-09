@@ -7,7 +7,7 @@ $(document).ready(function() {
 				'<li><a class="ios" href="ios.html">iPhone</a></li>'+
 				'<li><a class="mac" href="mac.html">Mac</a></li>'+
 				'<li><a class="android" href="android.html">Android</a></li>'+
-				'<li>Windows</li>'+
+				'<li><span class="unavailable">Windows</li></span>'+
 				// '<li><a class="mac" href="about.html">About</a></li>'+
 			'</ul>'+
 		'</div>'+
@@ -19,11 +19,11 @@ $(document).ready(function() {
 	'<hr>'+
 	'<div id="site-footer">'+
 		'<p>'+
-			'<a href="index.html"><span class="fa"></span> Home</a> | '+
-			'<a href="ios.html"><span class="fa"></span> iPhone & iPad</a> | '+
-			'<a href="mac.html"><span class="fa"></span> Mac</a> | '+
-			'<a href="android.html"><span class="fa"></span> Android</a> | '+
-			'<span class="fa"></span> Windows'+
+			'<a href="index.html" class="index"><span class="fa"></span> Home</a> | '+
+			'<a href="ios.html" class="ios"><span class="fa"></span> iPhone & iPad</a> | '+
+			'<a href="mac.html" class="mac"><span class="fa"></span> Mac</a> | '+
+			'<a href="android.html class="android"><span class="fa"></span> Android</a> | '+
+			'<span class="unavailable"><span class="fa"></span> Windows</span>'+
 		'</p>'+
 		'<p>'+
 			'<a href="about.html">About</a> | '+
