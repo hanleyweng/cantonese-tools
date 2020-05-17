@@ -252,6 +252,37 @@ div.page.instructions table img {
 	height: auto;
 }
 
+/* PAGE: TRANSLATE */
+/*div.page.translate h1 { font-size: 1.5em; }*/
+div.page.translate div.cover {
+	/*background: rgb(216,255,58);*/
+	/*background: linear-gradient(0deg, rgba(28,212,214,1) 0%, rgba(216,255,58,1) 100%);*/
+	/*color: black;*/
+	/*background: rgb(0,99,106);*/
+	/*background: linear-gradient(0deg, rgba(0,99,106,1) 0%, rgba(181,213,0,1) 100%);*/
+	/*background: orange;*/
+	/*background: rgb(121, 186, 0);*/
+	background: #2e8540;
+	/*background: rgb(46,133,64);*/
+	/*background: linear-gradient(0deg, rgba(46,133,64,1) 0%, rgba(91,164,31,1) 82%, rgba(123,185,8,1) 100%);*/
+	/*background: #e7f4e4;*/
+	/*color: #212121;*/
+	color: white;
+	font-size: 5vw;
+	border-radius: 1.0em;
+	padding: 1.5em 1em;
+	text-align: center;
+	/*font-weight: bold;*/
+}
+	/*calculated based on our page's max-width 850px with "padding: 5% 10%" (i.e. 120% * 850px) */
+	@media only screen and (min-width: 1020px) {
+		div.page.translate div.cover {
+			font-size: 52px;
+		}
+	}
+
+
+/**/
 div.page .subnotes {
 	font-style: italic;
 	color: #666;
