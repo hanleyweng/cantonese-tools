@@ -22,7 +22,7 @@ $(document).ready(function() {
 			'<a href="index.html" class="index"><span class="fa"></span> Home</a> | '+
 			'<a href="ios.html" class="ios"><span class="fa"></span> iPhone & iPad</a> | '+
 			'<a href="mac.html" class="mac"><span class="fa"></span> Mac</a> | '+
-			'<a href="android.html class="android"><span class="fa"></span> Android</a> | '+
+			'<a href="android.html" class="android"><span class="fa"></span> Android</a> | '+
 			'<span class="unavailable"><span class="fa"></span> Windows</span>'+
 		'</p>'+
 		'<p>'+
