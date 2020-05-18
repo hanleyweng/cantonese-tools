@@ -265,7 +265,25 @@ div.page.translate div.cover {
 			font-size: 52px;
 		}
 	}
-
+div.page.translate h2 {
+	font-size: 1.5em;
+	/*border-bottom: 4px solid lightgray;*/
+	/*width: 90%;*/
+	/*margin: auto;*/
+	/*display: block;*/
+	text-align: center;
+}
+div.page.translate h3 {
+	font-size: 1.35em;
+}
+div.page.translate h2 span.source {
+	border-bottom: 4px solid #2e8540;
+	border-top: 4px solid #2e8540;
+	padding: 0.1em 0.4em;
+	background: #e7f4e4;
+	white-space: nowrap;
+	line-height: 2em;
+}
 
 /**/
 div.page .subnotes {
