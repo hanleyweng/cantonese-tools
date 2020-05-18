@@ -28,13 +28,17 @@ a.cta:hover {
 body.home #site-header a.index,
 body.ios #site-header a.ios,
 body.mac #site-header a.mac,
-body.android #site-header a.android {
+body.android #site-header a.android, 
+body.translate #site-header a.translate
+{
 	border-bottom: 2px solid;
 }
 body.home #site-footer a.index,
 body.ios #site-footer a.ios,
 body.mac #site-footer a.mac,
-body.android #site-footer a.android {
+body.android #site-footer a.android, 
+body.translate #site-header a.translate
+{
 	border-bottom: 2px solid;
 }
 #site-header ul {
@@ -283,6 +287,10 @@ div.page.translate h2 span.source {
 	background: #e7f4e4;
 	white-space: nowrap;
 	line-height: 2em;
+}
+div.page.translate ul li em {
+	color: #999;
+	white-space: nowrap;
 }
 
 /**/
