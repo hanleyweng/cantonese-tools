@@ -2,6 +2,9 @@ p {}
 li {
 	margin: 1em 0;
 }
+span.nobreak {
+	white-space: nowrap;
+}
 a.cta {
 	border: 4px solid #1e87f0;
 	background-color: #1e87f0;
@@ -22,9 +25,6 @@ a.cta:hover {
 	margin: auto;
 	padding: 0 10%;
 }
-#site-header {
-	padding-top: 1em;
-}
 body.home #site-header a.index,
 body.ios #site-header a.ios,
 body.mac #site-header a.mac,
@@ -41,15 +41,20 @@ body.translate #site-header a.translate
 {
 	border-bottom: 2px solid;
 }
+div.header-section hr {
+	margin-bottom: 0;
+}
+#site-header {
+	/*padding-top: 1em;*/
+}
 #site-header ul {
 	padding: 0;
-}
-.header-section hr {
 	margin-bottom: 0;
 }
 #site-header ul li {
-	display: inline;
+	display: inline-block;
 	padding-right: 3em;
+	margin-bottom: 0;
 }
 #site-header span.unavailable,
 #site-footer span.unavailable
@@ -62,6 +67,7 @@ body.translate #site-header a.translate
 div.page {
 	padding: 5% 10%;
 }
+
 /* PAGE: ABOUT - OVERRIDES */
 div.page.about {
 	padding: initial;
