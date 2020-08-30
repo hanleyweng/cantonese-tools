@@ -1,0 +1,144 @@
+/* GENERAL */
+img {
+	border: default;
+}
+p em {
+	color: gray;
+}
+
+/* HEADER */
+#header-section {
+	text-align: center;
+}
+	#header-section h1 {
+		margin: 0;
+	}
+	#header-section h2 {
+		margin: 0;
+		/*word-spacing: 10em;*/
+	}
+
+/* SECTION LINKS */
+#section-links {
+	/*display: inline-block;*/
+	text-align: center;
+}
+
+#section-links div.app {
+	min-width: 28%;
+	background: #EFEFEF;
+	margin: 1%;
+	display: inline-block;
+	border-radius: 1em;
+	padding: 0.5em;
+	text-align: left;
+}
+#section-links div.app a:hover {
+	/*TEMP*/
+	text-decoration: none;
+	border: none;
+	box-shadow: 1em 1em 0.5em #CCC;
+}
+
+#section-links div.app img {
+	max-width: 80px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#section-links div.app div.labels {
+	/*background: yellow;*/
+	display: inline-block;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+#section-links div.app div.labels span {
+	display: block;
+}
+#section-links div.app div.labels span.cantonese {
+	font-size: 1.5em;
+	letter-spacing: 0.2em;
+}
+#section-links div.app div.labels span.jyutping {
+	font-size: 0.9em;
+}
+#section-links div.app div.labels span.english {
+	font-weight: 500;
+	font-size: 1.2em;
+}
+
+
+/* APP SECTION */
+div.app-section {
+
+}
+div.app-section div.app {
+	width: 100%;
+}
+
+div.app-section div.app img {
+	max-width: 80px;
+	display: inline-block;
+	margin-bottom: 1em;
+}
+div.app-section div.app div.labels {
+	font-size: 1.5em;
+	display: inline-block;
+	padding-left: 0.5em;
+	/*vertical-align: middle;*/
+}
+div.app-section div.app div.labels span {
+	/*padding-right: 1em;*/
+}
+div.app-section div.app div.labels span:not(:first-child):before {
+	content: " ⬩ ";
+}
+div.app-section div.app div.labels span.cantonese {
+	/*font-size: 1.5em;*/
+	letter-spacing: 0.2em;
+}
+div.app-section a.back-to-top {
+	display: block;
+	text-align: right;
+	padding: 0;
+	margin: 0;
+	font-size: 0.8em;
+}
+
+div.app-section table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	empty-cells: show; /*~*/
+
+}
+div.app-section table tr {
+	border: 1px solid black;
+	border-bottom: 1px solid black;
+	/*background: yellow;*/
+	background: #FFF;
+	vertical-align: top;
+	min-height: 1em;
+}
+div.app-section table tr:nth-child(odd) {
+	background: #EFEFEF;
+	/*background: orange;*/
+}
+div.app-section table tr td {
+	border: none;
+	padding: 0.1em 0.2em;
+}
+div.app-section table td.cantonese {
+	font-size: 1.2em;
+	letter-spacing: 0.2em;
+	padding: 0.1em 0em;
+	width:40%;
+}
+div.app-section table td.jyutping {
+	font-size: 0.9em;
+}
+div.app-section table td.english {
+	font-size: 0.9em;
+	/*border-left: 1px solid black;*/
+	/*padding: 0.2em 0em;*/
+}
