@@ -17,7 +17,9 @@ $(document).ready(function() {
 	'</div>';
 	$('body').prepend(header);
 
-	var footer = ''+
+	var footer = 
+	"<script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Cantonese Tools', '#29abe0', 'X7X53BJ07');kofiwidget2.draw();</script> "+
+	''+
 	'<hr>'+
 	'<div id="site-footer">'+
 		'<p>'+
