@@ -310,3 +310,21 @@ div.page .subnotes {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 }
+
+/* Donation Button */
+a.donation.button {
+	text-align: center;
+	display: block;
+}
+a.donation.button img {
+	margin: auto;
+	transition: 0.2s;
+}
+a.donation.button:hover {
+	border-bottom: none;
+}
+a.donation.button:hover img {
+	-webkit-filter: drop-shadow(5px 5px 5px gray );
+	filter: drop-shadow(5px 5px 5px gray);
+	transition: 0.2s;
+}

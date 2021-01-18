@@ -18,7 +18,7 @@ $(document).ready(function() {
 	$('body').prepend(header);
 
 	var footer = 
-	"<script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Cantonese Tools', '#29abe0', 'X7X53BJ07');kofiwidget2.draw();</script> "+
+	"<a href='https://ko-fi.com/X7X53BJ07' target='_blank' class='donation button'><img src='../images/general/support-button.png' height='42' style='text-align:center;height:42px;display:block;' alt='Support Cantonese Tools at ko-fi.com' /></a>"+
 	''+
 	'<hr>'+
 	'<div id="site-footer">'+
