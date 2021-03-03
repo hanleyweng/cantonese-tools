@@ -242,6 +242,10 @@ div.page.instructions img {
 	border-radius: 2px;
 	margin: 1em 0;
 }
+	div.page.instructions.windows img,
+	div.page.instructions.mac img {
+		max-width: 450px;
+	}
 div.page.instructions img.no-border {
 	border: none;
 }
@@ -253,6 +257,7 @@ div.page.instructions table,
 div.page.instructions table tr,
 div.page.instructions table td {
 	border: none;
+	vertical-align: top;
 }
 div.page.instructions table img {
 	display: block;

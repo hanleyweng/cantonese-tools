@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+	2017-09-04 REFERENCES:
+	- http://www.cantonese.sheik.co.uk/phorum/read.php?2,135454,135454
+ -->
+
+<head>
+	<meta charset="UTF-8">
+	<title>Windows Cantonese Input</title>
+	<meta name="keywords" content="Cantonese,input,keyboard,Hong Kong,Windows,Phone,Pixel,Instructions,Set up, How to,廣東話,粵語">
+	<meta name="description" content="How to type Cantonese on Windows.">
+
+	<!-- iOS Viewport -->
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+	<!-- Styles -->
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/uikit.css">
+	<link rel="stylesheet" href="css/uikit-h-base.css">
+	<link rel="stylesheet" href="css/cantonese-tools.css">
+	
+	<!-- JS -->
+	<script src="/js/ga-track.js"></script> <!-- Add GA Track code to every webpage -->
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="headerfooter.js"></script>
+
+</head>
+
+<body class="instructions windows">
+<div class="page instructions windows">
+	<h1>Cantonese on Windows</h1>
+	<p class="subtitle">How to write, type, listen, and dictate Cantonese on Windows Computers.</p>
+	<div class="section-links">
+		<div class="section-link"><a href="#write">
+			<span class="fa"></span><span class="description">Write</span><span class="status">✓</span></a></div>
+		<div class="section-link"><a href="#type">
+			<span class="fa"></span><span class="description">Type</span><span class="status weak">~</span></a></div>
+		<div class="section-link"><a href="#listen">
+			<span class="fa"></span><span class="description">Listen</span><span class="status weak">~</span></a></div>
+		<div class="section-link"><a href="#dictate">
+			<span class="fa"></span><span class="description">Dictate</span><span class="status weak">~</span></a></div>
+		<div class="section-link"><a href="#assistant">
+			<span class="fa"></span><span class="description">Assistant</span><span class="status none">x</span></a></div>
+	</div>
+	<em>This guide is written for Windows 10. However, most steps will also probably work for Windows 7.</em>
+
+	<hr>
+	<div id="write"></div>
+	<h2>Write</h2>
+	<p>To input Cantonese Chinese by Handwriting: </p>
+	<ol>
+		<li>Open <strong>Settings > Time & Language > Language </strong></li>
+		<li>Click <strong>Add a preffered language </strong></li>
+		<li>Select <strong>Chinese (Traditional, Hong Kong SAR)</strong>. <em class="comment">Wait for the download to complete.</em></li>
+		<!-- To do (allowing easy zooming of images): via JS -->
+		<!-- <a href="images/windows/handwriting-cantonese-chinese-windows10-download-language-pack.png" target="popup" onclick="window.open('images/windows/handwriting-cantonese-chinese-windows10-download-language-pack.png', 'popup', 'width=800,height=600'); return false;"; > -->
+			<img class="expandable" src="images/windows/handwriting-cantonese-chinese-windows10-download-language-pack.png" alt="Image showing the location of the Windows 10 Cantonese Chinese language pack.">
+		<!-- </a> -->
+
+		<li>Right-Click the Taskbar, and make sure that <strong>"Show touch keyboard button"</strong> is ticked.</li>
+		<img class="expandable" src="images/windows/handwriting-cantonese-chinese-windows10-enable-touch-keyboard.png" alt="Image showing the task bar menu and the touch keyboard button as checked.">
+
+		<li>Tap on the ‘Touch Keyboard’ button to open it. Change the language to Chinese (bottom-right), and change the mode to Handwriting <em class="comment">(this may be on the top-left or bottom-right)</em>.</li>
+		<img class="expandable" src="images/windows/handwriting-cantonese-chinese-windows10-enable-handwriting-mode.png" alt="Image showing how to enable chinese handwriting mode using the Windows touch keyboard.">
+
+	</ol>
+	<p>Now you can tap on the 'Touch Keyboard' button at anytime, and start handwriting chinese characters.</p>
+	<img class="expandable" src="images/windows/handwriting-cantonese-chinese-windows10-notepad.png" alt="Image showing Cantonese chinese writing in Windows 10, using the handwriting touch keyboard.">
+
+
+	<hr>
+	<div id="type"></div>
+	<h2>Type</h2>
+	<p>The two most popular programs for typing Cantonese in Windows 10 are RIME and CPIME. Both are free and have support for older versions of Windows.</p>
+
+	<table>
+		<tr>
+			<td>
+				<p><strong>RIME Weasel (中州韻 小狼毫)</strong></p>
+				<ul>
+					<li>A third-party IME. It’s open source and usually more reliable than other IMEs. The User Interface is in Chinese only.</li>
+				</ul>
+			</td>
+			<td>
+				<p><strong>CPIME (Cantonese Phonetic IME)</strong></p>
+				<ul>
+					<li>A more official Windows IME. However, it can sometimes fail to install for some versions of Windows.</li>
+				</ul>
+			</td>
+
+		</tr>
+
+		<tr>
+		<td>
+			<p>RIME Supports:</p>
+			<ul>
+				<li>Jyutping Romanization.</li>
+				<li>Multiple input methods can be enabled.</li>
+			</ul>
+		</td>
+		<td>
+			<p>CPIME Supports:</p>
+			<ul>
+				<li>Jyutping, Yale, Sidney Lau, & EduHK Romanizations.</li>
+				<li>Only 1 input method (Jyutping, Yale, etc.) can be enabled at a time.</li>
+			</ul>
+		</td>
+		</tr>
+	</table>
+
+	<h3>How to use RIME to type Cantonese in Windows 10:</h3>
+
+	<p><strong><u>Do you already have RIME installed?</u></strong></p>
+
+	<p><strong>No, I don't have RIME installed yet. I want to install RIME bundled with Cantonese.</strong></p>
+
+	To type Cantonese on Windows:
+
+	<ol>
+		<li>Run <a href="https://github.com/rime/rime-cantonese/releases/download/2021.01.19/windows-sfx-2021.01.19-installer.exe">windows-sfx-2021.01.19-installer.exe</a>. <em>(The latest windows-sfx exe from <a href="https://github.com/rime/rime-cantonese/releases" target="_blank">Rime-Cantonese</a>.)</em></li>
+		<img class="expandable" src="images/windows/type-cantonese-chinese-windows-install-rime.png" alt="Diagram showing the process of installing RIME on Windows 10.">
+
+		<li>The installation will take a few minutes. When it's done,<br>
+			<strong>Restart</strong> your computer.</li>
+
+		<li>In <strong>Taskbar > Language Picker</strong>, select <stong>RIME</stong>.<br>
+			<em>(Ignore RIME's language description in this menu. It has no affect on what language RIME actually uses.)</em></li>
+		<img class="expandable" src="images/windows/type-cantonese-chinese-windows-language-picker.png" alt="Image showing the Windows Language Picker menu, with RIME as an option.">
+
+		<li>Right-Click on RIME and select <strong>「輸入法設定 (S)」</strong> <em>(Input method setting (S))</em>.</li>
+		<img class="expandable" src="images/windows/type-cantonese-chinese-windows-rime-menu-translated.png" alt="Image showing the a translation of RIME's Menu UI.">
+
+		<li>Uncheck all options besides <strong>「粵語拼音」</strong> <em>(Cantonese Pinyin, i.e. Jyutping)</em>.<br>
+			<em>(Alternatively, you can have multiple RIME input modes, switching between them using [ Ctrl + ` ].)</em></li>
+		<img class="expandable" src="images/windows/type-cantonese-chinese-windows-rime-input-settings-menu-translated.png" alt="Image showing a translation of RIME's Input Settings Menu, with Cantonese options.">
+
+		<li>Click 【中】 to apply the language changes. Click 【中】 again to confirm RIME’s appearance. RIME (小狼毫) will then update itself (⧗ 維護中) with your new settings.</li>
+	</ol>
+
+	<p>Now, you can select RIME anytime from your Language Picker, and type Cantonese.</p>
+	<img class="expandable" src="images/windows/type-cantonese-chinese-windows-rime-notepad.png" alt="Image showing a user typing in Cantonese Jyutping in Windows 10, using the RIME input engine.">
+
+	<br>
+	<p><strong>Help, I already have an old installation of RIME and I want to add Cantonese to it:</strong></p>
+
+	<p>To add Cantonese input to an old installation of RIME:</p>
+
+	<ol>
+		<li>Right-Click on RIME and select <strong>「輸入法設定 (S)」</strong> <em>(Input method setting (S))</em>.</li>
+		<li>Select <strong>獲取更多輸入方案…</strong> <em>(Get more input options…)</em>. This will open the <strong>Rime Package Installer</strong> console.</li>
+		<li>In the <strong>Rime Package Installer</strong>: Type <strong>cantonese</strong> and hit <strong>Enter</strong>.</li>
+		<li>Back in RIME's Input Settings, tick <strong>粵語拼音</strong> <em>(Cantonese Pinyin)</em>.</li>
+	</ol>
+
+	<h3>How to use CPIME to type Cantonese in Windows 10:</h3>
+	<p>See instructions on <a href="https://www.pinyinjoe.com/faq/windows-10-cantonese-phonetic-ime-cpime.htm">how to install CPIME on Windows 10, by PinyinJoe</a>.</p>
+
+	<hr>
+	<div id="listen"></div>
+	<h2>Listen (TTS)</h2>
+	<p><em>…WIP…</em></p>
+
+	<hr>
+	<div id="dictate"></div>
+	<h2>Dictate</h2>
+	<p><em>…WIP…</em></p>
+
+	<hr>
+	<div id="assistant"></div>
+	<h2>Cortana</h2>
+	<p>Microsoft’s Cortana does not currently support Cantonese.</p>
+
+	<hr>
+	<div id="footnotes"></div>
+	<h2>Footnotes</h2>
+	<div class="subnotes">
+		<p>
+			Note: The information here is based on Windows 10 (version 1909).
+			<br> Page last updated Mar 2021. 
+		</p>
+
+		<!-- <p>If you have any questions or suggestions, please get in touch at: <a href="mailto:cantonese.tools@gmail.com">cantonese.tools@gmail.com</a></p> -->
+	</div>
+
+</div>
+</body>
+<script>
+
+	// Future: May expand this to other pages. (Place in common-class, i.e. headerfooter.js, and add 'expandable' class to other images.)
+
+	function popupImages() {
+		// $('img').wrap("<div class='new'></div>");
+		$('img.expandable').each(function(index) {
+			let src = $(this).attr('src');
+			$(this).wrap("<a href='"+src+"' target='popup' onclick=\"window.open('"+src+"', 'popup', 'width=800,height=600'); return false;\"; >")
+		});
+	}
+
+	$(document).ready(function() {
+		popupImages();
+	});
+</script>

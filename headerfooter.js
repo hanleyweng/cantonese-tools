@@ -7,7 +7,7 @@ $(document).ready(function() {
 				'<li><a class="ios" href="ios.html">iPhone</a></li>'+
 				'<li><a class="mac" href="mac.html">Mac</a></li>'+
 				'<li><a class="android" href="android.html">Android</a></li>'+
-				'<li><span class="unavailable">Windows</li></span>'+
+				'<li><a class="windows" href="windows.html">Windows</a></li>'+
 				'<li><a class="translate" href="translate.html">Translate</a></li>'+
 				'<li><a class="siri" href="siri.html">Siri</a></li>'+
 				// '<li><a class="mac" href="about.html">About</a></li>'+
@@ -27,7 +27,7 @@ $(document).ready(function() {
 			'<a href="ios.html" class="ios"><span class="fa"></span> iPhone & iPad</a> | '+
 			'<a href="mac.html" class="mac"><span class="fa"></span> Mac</a> | '+
 			'<a href="android.html" class="android"><span class="fa"></span> Android</a> | '+
-			'<span class="unavailable"><span class="fa"></span> Windows</span>'+ ' | ' +
+			'<a href="windows.html" class="windows"><span class="fa"></span> Windows</a> | ' +
 			'<a href="translate.html" class="translate"><span class="fa"></span> Translate</a>'+ ' | ' +
 			'<a href="siri.html" class="siri"><span class="fa"></span> Siri</a>'+
 		'</p>'+
